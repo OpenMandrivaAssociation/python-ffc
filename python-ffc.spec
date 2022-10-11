@@ -16,19 +16,12 @@ BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	gnupg2
 BuildRequires:	pkgconfig(python3)
-BuildRequires:	python3egg(setuptools)
+BuildRequires:	python3dist(setuptools)
 BuildRequires:	python3dist(pytest)
 BuildRequires:	python3dist(numpy)
-BuildRequires:	python3dist(fenics-fiat) >= %{fenics_version}
-BuildRequires:	python3dist(fenics-ufl) >= %{fenics_version}
-BuildRequires:	python3dist(fenics-dijitso) >= %{fenics_version}
-
-#Requires:	python3egg(dijitso) >= %{version}
-#Requires:	python3egg(fiat) >= %{version}
-#Requires:	python3egg(instant) >= %{version}
-#Requires:	python3egg(ufl) >= %{version}
-#Requires:	python3egg(numpy)
-#Requires:	python3egg(six)
+BuildRequires:	python3dist(fenics-fiat)
+BuildRequires:	python3dist(fenics-ufl)
+BuildRequires:	python3dist(fenics-dijitso)
 
 %description
 FFC is a compiler for finite element variational forms. From a high-level
