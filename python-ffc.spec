@@ -1,15 +1,12 @@
-%global module	ffc
-%global fname %(n=%{name}; echo ${n:0:1})
-
 Summary:	A compiler for finite element variational forms
-Name:		python-%{module}
-Version:	2019.1.0
+Name:		python-ffc
+Version:	2019.1.0.post0
 Release:	1
 License:	LGPLv3+
 Group:		Development/Python
 URL:		http://fenicsproject.org
-Source0:	https://bitbucket.org/fenics-project/%{module}/downloads/%{module}-%{version}.tar.gz
-#Source0:	https://pypi.io/packages/source/%{fname}/%{module}/%{module}-%{version}.tar.gz
+Source0:	https://bitbucket.org/fenics-project/ffc/downloads/ffc-%{version}.tar.gz
+#Source0:	https://pypi.io/packages/source/f/ffc/ffc-%{version}.tar.gz
 BuildArch:	noarch
 	
 BuildRequires:	cmake
@@ -38,15 +35,15 @@ FFC is part of the FEniCS Project.
 %license COPYING.LESSER
 %doc README.rst
 %doc AUTHORS
-%{_bindir}/%{module}*
-%{py_sitedir}/%{module}/
-%{py_sitedir}/fenics_%{module}-%{version}-py%{python_version}.egg-info/
-%{_mandir}/man1/%{module}.1*
+%{_bindir}/ffc*
+%{py_sitedir}/ffc/
+%{py_sitedir}/fenics_ffc-%{version}-py%{python_version}.egg-info/
+%{_mandir}/man1/ffc.1*
 
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -n %{module}-%{version}
+%autosetup -n ffc-%{version}
 
 %build
 %py_build
