@@ -4,7 +4,7 @@ Version:	2019.1.0.post0
 Release:	1
 License:	LGPLv3+
 Group:		Development/Python
-URL:		http://fenicsproject.org
+URL:		https://fenicsproject.org
 Source0:	https://bitbucket.org/fenics-project/ffc/downloads/ffc-%{version}.tar.gz
 #Source0:	https://pypi.io/packages/source/f/ffc/ffc-%{version}.tar.gz
 BuildArch:	noarch
