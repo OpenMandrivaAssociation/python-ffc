@@ -1,7 +1,7 @@
 Summary:	A compiler for finite element variational forms
 Name:		python-ffc
 Version:	2019.1.0.post0
-Release:	2
+Release:	3
 License:	LGPLv3+
 Group:		Development/Python
 URL:		https://fenicsproject.org
